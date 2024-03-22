@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Honk&family=Montserrat+Alternates&family=MuseoModerno&display=swap"
+            rel="stylesheet"
+        />
+        <link href="./output.css" rel="stylesheet" />
+        <title>Home | VPNaaS</title>
+    </head>
+    <body>
+        <div class="min-h-screen flex flex-col justify-between">
+            <div
+                class="nav mt-2 md:mt-7 container mx-auto flex flex-row justify-between items-center px-7 py-2"
+            >
+                <div class="flex flex-row justify-between items-center">
+                    <a
+                        href="/"
+                        class="flex flex-row justify-between items-center"
+                    >
+                        <img
+                            src="./security.svg"
+                            alt="logo"
+                            class="w-10 h-10"
+                        />
+                        <h1 class="text-2xl font-bold">VPNaaS</h1>
+                    </a>
+                </div>
+                <div class="hidden sm:flex flex-row space-x-4">
+                    <!-- copy this to add more options - also add links in mobile menu part too -->
+                    <a href="./our-vpn-servers.html" class="text-lg"
+                        >VPN Servers</a
+                    >
+                    <!-- end of copy -->
+
+                    <a href="./our-providers.html" class="text-lg">Server Providers</a>
+
+                    <a href="./cosmeticipv4.html" class="text-lg">Custom IPV4</a>
+                </div>
+                <div class="flex md:hidden text-white">
+                    <button id="menu_btn" class="sm:hidden">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="17.5"
+                            viewBox="0 0 20 14"
+                            id="menu_bars"
+                            class=""
+                        >
+                            <g
+                                fill="none"
+                                fill-rule="evenodd"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <g
+                                    stroke="#fff"
+                                    stroke-width="2"
+                                    transform="translate(-1629 -1753)"
+                                >
+                                    <g transform="translate(1630 1754)">
+                                        <path d="M0 6h18M0 0h18M0 12h18"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            fill="none"
+                            id="menu_close"
+                            class="hidden"
+                        >
+                            <path
+                                fill="#fff"
+                                d="M7.05 7.05a1 1 0 0 0 0 1.414L10.586 12 7.05 15.536a1 1 0 1 0 1.414 1.414L12 13.414l3.536 3.536a1 1 0 0 0 1.414-1.414L13.414 12l3.536-3.536a1 1 0 0 0-1.414-1.414L12 10.586 8.464 7.05a1 1 0 0 0-1.414 0Z"
+                            ></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- mobile nav - so add links that you add on top here also -->
+                <div
+                    id="mobile_menu"
+                    class="absolute w-full top-[65px] bg-[#191825] left-0 hidden"
+                >
+                    <div class="flex flex-col space-y-4 p-5">
+                        <!-- copy this to add more options -->
+                        <a href="./our-vpn-servers.html" class="text-lg"
+                            >VPN Servers</a
+                        >
+                        <!-- end of copy -->
+
+                        <a href="./our-providers.html" class="text-lg">Server Providers</a>
+
+                        <a href="./cosmeticipv4.html" class="text-lg">Custom IPV4</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mx-auto px-3 md:px-0 text-center space-y-24">
+                <div>
+                    <h1 class="heading text-4xl md:text-7xl font-black text-[#64CCC5]">
+                        #1 Free VPN Service
+                    </h1>
+                </div>
+
+<a href="./kb" class="font-medium text-blue-600 
+dark:text-blue-500 hover:underline">How to use our 
+VPN</a>
+
+
+                <div class="flex flex-row justify-around items-center">
+                    <a
+                        href="https://discord.gg/ENXMPrn4yX"
+                        class="bg-[#5865F2] py-2 px-5 rounded-lg hover:shadow-xl"
+                    >
+                        <img
+                            src="./discord.svg"
+                            alt="logo"
+                            class="w-[120px] h-[25px]"
+                        />
+                    </a>
+                    <a target="_blank" href="https://vpnaas.org/our-vpn-servers.html">
+                        <button
+                            class="buy py-2 px-7 rounded-lg hover:shadow-xl"
+                        >
+                            Free VPN
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer py-2 text-center font-extralight text-sm md:text-base">
+                &copy; 2024 Akhtar Technologies Limited (14566398)
+            </div>
+        </div>
+        <script>
+            const menu_btn = document.getElementById("menu_btn");
+            const mobile_menu = document.getElementById("mobile_menu");
+            const menu_bars = document.getElementById("menu_bars");
+            const menu_close = document.getElementById("menu_close");
+
+            menu_btn.addEventListener("click", () => {
+                mobile_menu.classList.toggle("hidden");
+                menu_bars.classList.toggle("hidden");
+                menu_close.classList.toggle("hidden");
+            });
+        </script>
+    </body>
+</html>

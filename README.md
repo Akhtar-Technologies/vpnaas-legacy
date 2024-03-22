@@ -1,2 +1,5 @@
-# vpnaas-legacy
-Legacy website for VPNaaS.org
+# html-tailwind-template
+
+```
+npx tailwindcss -i ./styles.css -o ./output.css --watch
+```
